@@ -11,7 +11,7 @@ const VibeTags = () => {
    {tags.map((item, index)=> (
         <div className="bg-gray-300 rounded-md w-fit flex px-2 py-1 gap-2 items-center custom-btn-background shadow-profile-tags" key={index}>
         <img src={TagImage} className="rounded-full w-[32px] h-[32px] border border-[#00B9FF]" />
-        <span className="font-medium text-sm leading-[21px] font-poppins tracking-normal text-[#000000] capitalize opacity-30">Amazing</span>
+        <span className="font-medium text-sm leading-[21px] font-poppins tracking-normal text-[#000000] capitalize opacity-30">{item}</span>
       </div>
       ))}
    </div>
