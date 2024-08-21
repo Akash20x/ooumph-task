@@ -34,7 +34,7 @@ const VibeScoreList = [
 
 const Vibes = () => {
   return (
-    <div className="flex gap-8 justify-end w-5/6 mx-8 py-2">
+    <div className="flex gap-8 lg:justify-end lg:w-5/6 lg:mx-8 py-2 mt-[5rem] lg:mt-0">
         <div className="flex flex-col gap-2">
             <p className="text-[#000000DE] capitalize opacity-[0.7] font-poppins font-medium tracking-[1.3px]">(0.0 Vibes)</p>
             <h2 className="font-poppins font-bold text-4xl leading-[20px] tracking-[3.12px]">4.2</h2>

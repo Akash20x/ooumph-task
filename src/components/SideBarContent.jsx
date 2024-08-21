@@ -9,7 +9,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 
 const SideBarContent = () => {
   return (
-    <div className='border-2 border-gray-200 border-l-0 h-screen border-b-0 w-[12rem]'>
+    <div className='border-2 border-gray-200 border-l-0 border-b-0 w-[12rem] h-[85rem]'>
       <img src={Logo} alt='ooumph logo' className='w-[138px] h-[70px] ml-[8px] mr-[40px] mt-[22px] mb-[46px]' />
       <ul className='py-2 font-poppins'>
         <li className='flex px-6 py-2 gap-4 items-center'>

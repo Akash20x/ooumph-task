@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 
+html, body { 
+  min-height: 100%;
+}
+
 .arc {
   position: relative;
   width: 96px; 

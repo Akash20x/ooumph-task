@@ -6,7 +6,7 @@ import VibeTags from "../components/VibeTags"
 
 const Profile = () => {
   return (
-    <div className="mx-20 w-full">
+    <div className="mx-20 w-full relative h-screen">
       <Vibes />
       <ProfileDetails />
       <SendVibes />
