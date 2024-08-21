@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.arc {
+  position: relative;
+  width: 96px; 
+  height: 96px; 
+}
+
+.circle {
+  position: absolute;
+  width: 8px; 
+  height: 8px; 
+  border-radius: 50%;
+}
+
+
+.arc .circle:nth-child(1) { transform: rotate(115deg) translateY(21px); }
+.arc .circle:nth-child(2) { transform: rotate(145deg) translateY(27px); }
+.arc .circle:nth-child(3) { transform: rotate(-6deg) translateY(-34px); }
+.arc .circle:nth-child(4) { transform: rotate(-164deg) translateY(42px); }
+.arc .circle:nth-child(5) { transform: rotate(39deg) translateY(-43px) ; }
+.arc .circle:nth-child(6) { transform: rotate(58deg) translateY(-41px); }
+.arc .circle:nth-child(7) { transform: rotate(77deg) translateY(-41px); }
+
+/* Center the circles along the arc */
+.arc .circle {
+  left: 0;
+  top: 50%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(90deg, #FE1D02 0%, #004CFF 28%, #22BE23 72%, #F9F513 100%);
+  border-radius: 1rem;
+  height: 0.2rem;
+}
+
+input[type="range"]::-moz-range-track {
+  background: linear-gradient(90deg, #FE1D02 0%, #004CFF 28%, #22BE23 72%, #F9F513 100%);
+  border-radius: 1rem;
+  opacity: 0.7;
+  height: 0.5rem;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  background: url('./assets/slider-icon.png') no-repeat center center; 
+  background-size: contain; 
+  margin-top: -15px;
+  border-radius: 50%;
+  border: none; 
+  position: relative;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background: white;
+  border-radius: 50%;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+.slider-value{
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 5px;
+  border-radius: 5px;
+  color: #000000;}
+
+
+.side-border{
+  border-left: 1px solid #909FAC;
+  border-right: 1px solid #909FAC;
+  height: 44px;
+  padding: 0px 12.4% 0 15.5%;
+  opacity: 0.39;
+}
+
+
+.custom-tags-background {
+  background: transparent linear-gradient(286deg, #F2F3F6 0%, #E5E6EC 100%);
+  background-size: cover;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  border-radius: 40px;
+}
+
+.custom-tab{
+  background: #EDEEF2 0% 0% no-repeat padding-box;
+box-shadow: 3px 3px 15px #24415D40;
+border-radius: 15px;
+opacity: 1;
+}
+
